@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = '<YOUR_DOCKERHUB_USERNAME>/car-service:latest'
+        DOCKER_IMAGE = 'zahaak7/car-service:latest'
     }
 
     stages {
