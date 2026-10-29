@@ -37,10 +37,10 @@ pipeline {
                 }
             }
         }
-
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f deployment.yaml'
+                bat 'kubectl delete deployment car-service --ignore-not-found'
+                bat 'kubectl apply -f pod.yaml'
             }
         }
     }
