@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: car-service-pod
+  labels:
+    app: car-service
+spec:
+  containers:
+  - name: car-service-container
+    image: zahaak7/car-service:latest
+    ports:
+    - containerPort: 8080
