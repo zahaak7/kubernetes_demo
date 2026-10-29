@@ -37,6 +37,7 @@
                         <manifest>
                             <mainClass>App</mainClass>
                         </manifest>
+                             
                     </archive>
                 </configuration>
             </plugin>
